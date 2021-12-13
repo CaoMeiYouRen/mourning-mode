@@ -1,6 +1,6 @@
 {
   "name": "mourning-mode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "哀悼模式，在指定日期自动使网页变黑白",
   "author": "CaoMeiYouRen",
   "license": "MIT",
