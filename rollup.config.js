@@ -110,32 +110,32 @@ export default defineConfig([
             isMin: false,
         }),
     },
-    // {
-    //     input: 'src/index.ts',
-    //     output: {
-    //         file: 'dist/index.browser.js', // 生成 browser umd
-    //         format: 'umd',
-    //         name: outputName,
-    //         sourcemap: true,
-    //     },
-    //     plugins: getPlugins({
-    //         isBrowser: true,
-    //         isDeclaration: false,
-    //         isMin: true,
-    //     }),
-    // },
-    // {
-    //     input: 'src/index.ts',
-    //     output: {
-    //         file: 'dist/index.browser.esm.js', // 生成 browser esm
-    //         format: 'esm',
-    //         name: outputName,
-    //         sourcemap: true,
-    //     },
-    //     plugins: getPlugins({
-    //         isBrowser: true,
-    //         isDeclaration: false,
-    //         isMin: true,
-    //     }),
-    // },
+    {
+        input: 'src/index.ts',
+        output: {
+            file: 'dist/index.browser.js', // 生成 browser umd
+            format: 'umd',
+            name: outputName,
+            sourcemap: true,
+        },
+        plugins: getPlugins({
+            isBrowser: true,
+            isDeclaration: false,
+            isMin: true,
+        }),
+    },
+    {
+        input: 'src/index.ts',
+        output: {
+            file: 'dist/index.browser.esm.js', // 生成 browser esm
+            format: 'esm',
+            name: outputName,
+            sourcemap: true,
+        },
+        plugins: getPlugins({
+            isBrowser: true,
+            isDeclaration: false,
+            isMin: true,
+        }),
+    },
 ])
