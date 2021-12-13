@@ -15,9 +15,7 @@ function autoEnableMourningMode() {
     }
 }
 
-
 window.addEventListener('load', () => {
     autoEnableMourningMode()
 })
-
 
