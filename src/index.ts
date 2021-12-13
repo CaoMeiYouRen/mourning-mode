@@ -6,18 +6,15 @@ const dateList = [
 
 // 自动开启哀悼模式
 function autoEnableMourningMode() {
-    if (dateList.some((date) => {
-        const m = new Date().getMonth() + 1
-        const d = new Date().getDate()
-        return date === `${m}/${d}`
-    })) {
+    const m = new Date().getMonth() + 1
+    const d = new Date().getDate()
+    const today = `${m}/${d}`
+    if (dateList.some((date) => date === today)) {
         document.body.style.filter = 'grayscale(1)'
     }
 }
 
-
 window.addEventListener('load', () => {
     autoEnableMourningMode()
 })
-
 
