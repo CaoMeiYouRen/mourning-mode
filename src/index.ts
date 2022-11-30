@@ -1,6 +1,7 @@
-const dateList = [
+const dateList: string[] = window.MOURNING_MODEDATE_LIST || [
     '7/7', // 七七事变
     '9/18', // 九一八事变
+    '11/30', // 长者祭日
     '12/13', // 国家公祭日
 ]
 
@@ -14,7 +15,5 @@ function autoEnableMourningMode() {
     }
 }
 
-window.addEventListener('load', () => {
-    autoEnableMourningMode()
-})
+window.addEventListener('load', autoEnableMourningMode)
 
